@@ -36,22 +36,3 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('contextmenu', function(e) {
     e.preventDefault();
 });
-
-window.addEventListener('scroll', function() {
-  var button = document.getElementById('back-to-top-btn');
-  if (window.scrollY > 200) {
-    button.classList.add('visible');
-    button.classList.remove('hidden');
-  } else {
-    button.classList.add('hidden');
-    button.classList.remove('visible');
-  }
-});
-
-var backToTopButton = document.getElementById('back-to-top-btn');
-backToTopButton.addEventListener('click', function() {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  });
-});
