@@ -323,3 +323,34 @@ html {
 
 }
 /* End  Media Query For Desktop */
+
+/* back to top button*/
+#back-to-top-btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  padding: 0px;
+  background-color: #29323c;
+  color: white;
+  border: 1px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#back-to-top-btn:hover {
+  background-color: transparent;
+  transform: scale(1.1);
+}
+
+#back-to-top-btn.visible {
+  display: block;
+}
+
+#back-to-top-btn.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+/* terakhir button top */
