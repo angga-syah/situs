@@ -265,31 +265,31 @@ p {
 
 /* End home Section */
 
-/* courses Section */
-#courses .courses {
+/* task Section */
+#task .task {
 	flex-direction: column;
 	text-align: center;
 	max-width: 1500px;
 	margin: 0 auto;
 	padding: 10px 0;
 }
-#courses .service-top {
+#task .service-top {
 	max-width: 1200px;
 	margin-bottom: 25px;
 }
-#courses .service-top p {
+#task .service-top p {
 	max-width: auto;
 	margin-bottom: 25px;
 	font-size:2rem;
 }
-#courses .service-bottom {
+#task .service-bottom {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
 	margin-top: 1px;
 }
-#courses .service-item {
+#task .service-item {
 	flex-basis: 80%;
 	min-width: 400px;
 	display: flex;
@@ -305,7 +305,7 @@ p {
 	z-index: 1;
 	overflow: hidden;
 }
-#courses .service-item::after {
+#task .service-item::after {
 	content: '';
 	position: absolute;
 	left: 0;
@@ -316,7 +316,7 @@ p {
 	opacity: 0.9;
 	z-index: -1;
 }
-#courses .service-bottom .icon {
+#task .service-bottom .icon {
 	height: 350px;
 	width: 250px;
 	margin-left: auto;
@@ -326,19 +326,19 @@ p {
 	max-height: 300px;
 	max-width: auto;
 }
-#courses .service-item h2 {
+#task .service-item h2 {
 	font-size: 2rem;
 	color: white;
 	margin-bottom: auto;
 	text-transform:;
 }
-#courses .service-item p {
+#task .service-item p {
 	color: white;
 	text-align: center;
 	margin-bottom: 20px;
 	
 }
-/* End courses Section */
+/* End task Section */
 
 /* Projects section */
 #projects .projects {
