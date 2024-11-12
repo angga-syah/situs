@@ -272,6 +272,7 @@ p {
 	max-width: 1500px;
 	margin: 0 auto;
 	padding: 10px 0;
+	margin-top: 10px;
 }
 #task .service-top {
 	max-width: 1200px;
