@@ -272,12 +272,10 @@ p {
     max-width: 1200px;
     text-align: center;
     margin: 0 auto;
-    padding: 20px;
 }
 
 .service-top {
-    margin-bottom: 25px;
-    padding: 100px 0;
+    padding: 80px 0;
 }
 
 .service-top p {
