@@ -429,7 +429,7 @@ td:hover {
 
 @media (max-width: 768px) {
     .task-items {
-        gap: 15px;
+        gap: 50px;
     }
 
     .task-item {
