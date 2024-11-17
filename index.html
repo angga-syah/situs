@@ -86,14 +86,48 @@
             <img src="./img/soon.jpg" alt="soon">
             <span>Soon</span>
         </a>
-	<a href="https://angga-syah.github.io/" class="task-item" target="_blank">
-            <img src="./img/soon.jpg" alt="soon">
-            <span>Soon</span>
+	a href="javascript:void(0);" class="task-item" id="calculator-task">
+            <img src="https://via.placeholder.com/280x311.png" alt="Calculator">
+            <span>Calculator</span>
         </a>
 	<a href="https://angga-syah.github.io/" class="task-item" target="_blank">
             <img src="./img/soon.jpg" alt="soon">
             <span>Soon</span>
         </a>
+	<div id="calculator-modal" class="calculator-modal">
+        <div class="modal-content">
+          <span class="close-btn" id="close-modal">&times;</span>
+          <div id="calculator">
+            <input type="text" id="result" disabled />
+            <table>
+              <tr>
+                <td onclick="appendToResult('1')">1</td>
+                <td onclick="appendToResult('2')">2</td>
+                <td onclick="appendToResult('3')">3</td>
+                <td onclick="appendToResult('+')">+</td>
+              </tr>
+              <tr>
+                <td onclick="appendToResult('4')">4</td>
+                <td onclick="appendToResult('5')">5</td>
+                <td onclick="appendToResult('6')">6</td>
+                <td onclick="appendToResult('-')">-</td>
+              </tr>
+              <tr>
+                <td onclick="appendToResult('7')">7</td>
+                <td onclick="appendToResult('8')">8</td>
+                <td onclick="appendToResult('9')">9</td>
+                <td onclick="appendToResult('*')">*</td>
+              </tr>
+              <tr>
+                <td onclick="appendToResult('0')">0</td>
+                <td onclick="clearResult()">C</td>
+                <td onclick="calculateResult()">=</td>
+                <td onclick="appendToResult('/')">/</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+     	</div>    
     </div>
   </div>
 </section>
@@ -199,6 +233,7 @@
   </section>
   <!-- End Footer -->
   <script src="./app.js"></script>
+  <script src="./calc.js"></script>
 </body>
 
 </html>
