@@ -48,3 +48,31 @@ document.addEventListener('keydown', function(event) {
         }
     }
 });
+
+// sertifikat
+document.querySelectorAll('.certificate-modal-trigger').forEach(item => {
+    item.addEventListener('click', function (event) {
+        event.preventDefault();
+        const modal = document.getElementById('certificate-modal');
+        const image = document.getElementById('certificate-image');
+        image.src = this.href; // Set image source to the certificate's URL
+        modal.style.display = 'flex';
+    });
+});
+
+document.querySelector('.close-certificate').addEventListener('click', function () {
+    const modal = document.getElementById('certificate-modal');
+    const image = document.getElementById('certificate-image');
+    image.src = ''; // Clear image source
+    modal.style.display = 'none';
+});
+
+window.addEventListener('click', function (event) {
+    const modal = document.getElementById('certificate-modal');
+    if (event.target === modal) {
+        const image = document.getElementById('certificate-image');
+        image.src = ''; // Clear image source
+        modal.style.display = 'none';
+    }
+});
+
