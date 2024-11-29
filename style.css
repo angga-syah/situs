@@ -456,7 +456,7 @@ td:hover {
 
 .certificate-content {
     position: relative;
-    background-color: rgba(25, 25, 255);
+    background-color: #82A8CE;
     padding: 4px;
     border-radius: 10px;
     box-shadow: 0px rgba(0,0,0, 0.5);
