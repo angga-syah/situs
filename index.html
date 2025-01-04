@@ -32,6 +32,30 @@
             color: green;
             margin-top: 20px;
         }
+	.filter-menu {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  background-color: #48f542;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.filter-btn.active {
+  background-color: #32a836;
+}
+
+.task-item {
+  display: none; /* Default hidden, controlled by JS */
+}
+
     </style>
 
 </head>
@@ -86,29 +110,33 @@
       <h1 class="section-title"><span>T</span>AS<span>K</span></h1>
       <p>I have successfully completed several assignments given by my lecturer, and these are the results</p>
     </div>
-
+<div class="filter-menu">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="certificate">Certificate</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+      </div>
     <div class="task-items">
-        <a href="./tugas/komas.html" class="task-item" target="_blank">
+        <a href="./tugas/komas.html" class="task-item web" target="_blank">
             <img src="./img/komas.jpg" alt="Computers and Society">
             <span>Summary task of Computers and Society subject</span>
         </a>
-        <a href="https://angga-syah.github.io/form-login/" class="task-item" target="_blank">
+        <a href="https://angga-syah.github.io/form-login/" class="task-item web" target="_blank">
             <img src="./img/login2.png" alt="Form Login 1">
             <span>Form Login</span>
-        </a><a href="https://www.sololearn.com/certificates/CC-MR9UJVTK"class="task-item" target="_blank">
+        </a><a href="https://www.sololearn.com/certificates/CC-MR9UJVTK"class="task-item certificate" target="_blank">
 	<!--<a href="https://api2.sololearn.com/v2/certificates/CC-MR9UJVTK/image/jpg?t=638674093996743550" class="task-item certificate-modal-trigger">-->
            <img src="https://api2.sololearn.com/v2/certificates/CC-MR9UJVTK/image/jpg?t=638674093996743550" alt="Introduction to HTML Certificate">
            <span>Introduction to HTML Certificate</span>
-	</a><a href="https://www.sololearn.com/certificates/CC-EK1SKGJH"class="task-item" target="_blank">
+	</a><a href="https://www.sololearn.com/certificates/CC-EK1SKGJH"class="task-item certificate" target="_blank">
 	<!--<a href="https://api2.sololearn.com/v2/certificates/CC-EK1SKGJH/image/jpg?t=638674132889942630" class="task-item certificate-modal-trigger">-->
            <img src="https://api2.sololearn.com/v2/certificates/CC-EK1SKGJH/image/jpg?t=638674132889942630" alt="Introduction to CSS Certificate">
            <span>Introduction to CSS Certificate</span>
-	</a><a href="https://www.sololearn.com/certificates/CC-T4ITKDSG"class="task-item" target="_blank">
+	</a><a href="https://www.sololearn.com/certificates/CC-T4ITKDSG"class="task-item certificate" target="_blank">
 	<!--<a href="https://api2.sololearn.com/v2/certificates/CC-T4ITKDSG/image/jpg?t=638674149690735480" class="task-item certificate-modal-trigger">-->
            <img src="https://api2.sololearn.com/v2/certificates/CC-T4ITKDSG/image/jpg?t=638674149690735480" alt="Introduction to JavaScript Certificate">
            <span>Introduction to JavaScript Certificate</span>
 	</a>
-	    <a href="https://www.sololearn.com/certificates/CC-OZLEQXBA"class="task-item" target="_blank">
+	    <a href="https://www.sololearn.com/certificates/CC-OZLEQXBA"class="task-item certificate" target="_blank">
 	<!--<a href="https://api2.sololearn.com/v2/certificates/CC-OZLEQXBA/image/jpg?t=638674859552488400" class="task-item certificate-modal-trigger">-->
            <img src="https://api2.sololearn.com/v2/certificates/CC-OZLEQXBA/image/jpg?t=638674859552488400" alt="JavaScript Intermediate Certificate">
            <span>JavaScript Intermediate Certificate</span>
@@ -118,19 +146,19 @@
 	<!--    <a href="https://www.sololearn.com/certificates/CC-T4ITKDSG"target="_blank">Introduction to JavaScript Certificate</a>-->
 	<!-- <a href="https://www.sololearn.com/certificates/CC-OZLEQXBA"target="_blank">JavaScript Intermediate Certificate</a>-->
 
-        <a href="javascript:void(0);" class="task-item" id="calculator-task">
+        <a href="javascript:void(0);" class="task-item web" id="calculator-task">
             <img src="./img/calc.png" alt="Calculator">
             <span>Calculator</span>
         </a>
-	<a href="https://tetris.unpam.cloud/" class="task-item" target="_blank">
+	<a href="https://tetris.unpam.cloud/" class="task-item web" target="_blank">
             <img src="./img/tetris.png" alt="Tetris">
             <span>Tetris</span>
         </a>
-	<a href="https://angga-syah.github.io/demo_uts/" class="task-item" target="_blank">
+	<a href="https://angga-syah.github.io/demo_uts/" class="task-item web" target="_blank">
             <img src="./img/uts.png" alt="soon">
             <span>Admin Dashboard Frontend</span>
         </a>
-	    <a href="https://dashboard.unpam.cloud/" class="task-item" target="_blank">
+	    <a href="https://dashboard.unpam.cloud/" class="task-item web" target="_blank">
             <img src="./img/db.jpg" alt="Chart Dashboard">
             <span>Chart Dashboard</span>
         </a>
@@ -138,7 +166,7 @@
             <img src="./img/wpp.jpg" alt="Tugas Kelompok 4">
             <span>Tugas Kelompok 4</span>
         </a>
-	<a href="https://angga-syah.github.io/" class="task-item" target="_blank">
+	<a href="https://angga-syah.github.io/" class="task-item web" target="_blank">
             <img src="./img/soon.jpg" alt="soon">
             <span>soon</span>
         </a>
@@ -316,6 +344,35 @@
             this.reset();
         });
     </script>
+	<script>
+  const filterButtons = document.querySelectorAll(".filter-btn");
+  const taskItems = document.querySelectorAll(".task-item");
+
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      // Hapus class active dari semua tombol
+      filterButtons.forEach((btn) => btn.classList.remove("active"));
+      // Tambahkan class active ke tombol yang dipilih
+      button.classList.add("active");
+
+      // Dapatkan kategori filter dari tombol
+      const filter = button.getAttribute("data-filter");
+
+      // Tampilkan/hilangkan task berdasarkan kategori
+      taskItems.forEach((item) => {
+        if (filter === "all" || item.classList.contains(filter)) {
+          item.style.display = "block"; // Tampilkan
+        } else {
+          item.style.display = "none"; // Sembunyikan
+        }
+      });
+    });
+  });
+
+  // Atur default filter (All)
+  document.querySelector(".filter-btn[data-filter='all']").click();
+</script>
+
 
 </body>
 
